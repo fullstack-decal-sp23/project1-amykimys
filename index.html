@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Amy's Personal Webiste</title>
+  </head>
+  <body>
+    <div class="top-section">
+      <div class="header">
+        <button class="header-button" style="font-weight: 600">HOME</button>
+        <button class="header-button">ABOUT</button>
+        <button class="header-button">PROJECTS</button>
+        <button class="header-button" onclick="contact()">CONTACT</button>
+        <script>
+          function contact() {
+            window.location.href = "contact.html";
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="wrapper">
+        <div class="content item-1">
+          <h4 class="hello">Hello :)</h4>
+          <h1 class="name">
+            I'm <span style="color: rgb(85, 211, 246)"> Amy Yunseo Kim</span>
+          </h1>
+          <h5 class="description">
+            I am a third-year studying Data Science and Molecular Cell Biology
+            in UC Berkeley. I am also very interested in full-stack
+            webdevelopment and working in the Biotech industry. My hobbies
+            include playing tennis, crocheting, watching cute animal videos
+            (including my dog), and cooking! Check out some of my work below,
+            and feel free to reach out for anything :)
+          </h5>
+          <button class="resume-button">Download CV</button>
+        </div>
+        <div class="item-2">
+          <img id="amy" src="amy.JPG" alt="picture of me" />
+        </div>
+        <div class="item-3">
+          <h3 class="question">Q: What's your favorite animal?</h3>
+          <form>
+            <label class="answer" for="animal">A: </label>
+            <input
+              class="answer-area"
+              type="text"
+              id="animal"
+              placeholder="your favorite animal"
+            /><br />
+            <input type="submit" class="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="left-footer"></div>
+    </div>
+  </body>
+</html>
